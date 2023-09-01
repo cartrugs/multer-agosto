@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +14,9 @@
 
   <h2>Archivos Disponibles:</h2>
   <ul>
-    <% for (const file of files) { %>
+    <% files.forEach(function(file) { %>
       <li><a href="/uploads/<%= file %>"><%= file %></a></li>
-    <% } %>
+    <% }) %>
   </ul>
 </body>
 </html>
